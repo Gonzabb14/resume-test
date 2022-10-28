@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgb(137,0,0);
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px rgb(255,39,39);
+    width: 100%;
+    height: 60px;
+}
+
+#navbar-ul {
+    position: relative;
+    right: 100px;
+    margin: 0;
+    padding: 0;;
+    display: flex;
+    list-style: none;
+}
+
+li {
+
+    height: 100%;
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100px;
+}
+
+a:hover {
+    background-color: rgba(255,0,0,0.2);
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 0px;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+#welcome-section {
+    color: white;
+    background-color: rgb(38, 40, 43);
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+}
+
+#welcome-div {
+    position: relative;
+    top: 35vh;
+}
+
+h1 {
+    margin: 0 0 5px 0;;
+    font-size: 2.5rem;;
+}
+
+#welcome-p {
+    color: rgba(165, 29, 29, 0.829);
+    margin: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#projects {
+    background-color: rgb(59, 68, 83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+#projects-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 60vw;
+    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+
+@media only screen and (max-width:1600px) and (min-width: 1301px) {
+    #projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width:1300px) and (min-width: 1024px) {
+    #projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 800px) {
+    #projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 320px) {
+    #projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    #projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 80vw;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    #navbar {
+        justify-content: center;
+    }
+    #navbar-ul {
+        right: 0;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px black;
+    width: 100%;
+    border-radius: 2%;;
+}
+
+#project-h2 {
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2rem;;
+}
+
+.link-projects {
+    background-color: rgba(89, 147, 167, 0.74);
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.link-projects:hover {
+    background-color: gray;
+}
+
+.image {
+    position: relative;
+    height: 85%;
+    width: auto;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    object-fit: cover;
+}
+
+
+#contact {
+    color: white;
+    background-color: rgb(94, 92, 92);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact-ul {
+    display: flex;
+
+    justify-content: center;
+    left: 0;
+    list-style: none;
+}
+
+#contact-h2 {
+    position: relative;
+    bottom: 100px;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 10px;
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 0.8rem;
+}
+
